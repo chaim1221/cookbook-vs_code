@@ -3,6 +3,12 @@ require 'foodcritic'
 require 'kitchen'
 require 'rspec/core/rake_task'
 
+begin
+  require 'emeril/rake'
+rescue LoadError
+  puts '>>>>> Emeril gem not loaded, omitting tasks'
+end
+
 RuboCop::RakeTask.new do |rubocop|
   rubocop.options = ['-D']
 end

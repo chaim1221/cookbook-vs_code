@@ -1,7 +1,7 @@
 name 'vs_code'
 maintainer 'Sean Escriva'
 maintainer_email 'sean.escriva@gmail.com'
-license 'all_rights'
+license 'Apache v2.0'
 description 'Installs/Configures Visual Studio Code'
 long_description 'Installs/Configures Visual Studio Code - a lightweight source code editor'
 version '0.1.0'

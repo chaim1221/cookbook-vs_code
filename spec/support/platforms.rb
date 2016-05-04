@@ -50,13 +50,3 @@ RSpec.shared_context 'ubuntu-14.04' do
     ).converge(described_recipe)
   end
 end
-
-# Rspec.shared_context 'centos-7.2' do
-#   cached(:chef_run) do
-#     ChefSpec::SoloRunner.new(
-#       platform: 'centos',
-#       version: '7.2',
-#       file_cache_path: '/var/chef/cache'
-#     ).converge(described_recipe)
-#   end
-# end
